@@ -1,4 +1,4 @@
-# Cognitive Load Optimization Engine 🧠⚡️
+# Cognitive Load Optimization Engine
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B)
@@ -10,7 +10,7 @@ A Research-Grade Cognitive Load Analysis and Optimization platform. This engine 
 
 Unlike standard "dumb" LLM wrappers that blindly rewrite text, this project operates on **independent deterministic verification**. It forces the LLM to iteratively rewrite a snippet until it passes an independent audit engine verifying that extraneous and intrinsic load have verifiably decreased.
 
-## ✨ Key Features
+## Key Features
 
 - **15+ Independent NLP Metrics:** Calculates Intrinsic, Extraneous, and Germane load using word Zipf frequencies, dependency tree depths, branching factors, nominalizations, passive voice, and pedagogical scaffolding markers.
 - **Machine Learning Calibrated CLI:** Scores are normalized and calibrated using an XGBoost model trained on 1,000 texts from the CLEAR Corpus (`test_R²: 0.85+`).
@@ -20,7 +20,7 @@ Unlike standard "dumb" LLM wrappers that blindly rewrite text, this project oper
 - **AI-Powered Pedagogy:** Suggests dynamic instructional design techniques and performs Multi-Objective Optimization (balancing Simplicity, Accuracy, and Pedagogy).
 - **Service-Oriented Architecture:** Clean separation of concerns with isolated `services/`, Pydantic models in `models/schemas.py`, and a fast, decoupled `api/main.py`.
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
 CLI_Proj/
@@ -43,7 +43,7 @@ CLI_Proj/
 └── train_ml.py              # ML training pipeline script
 ```
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. Requirements
 
@@ -101,7 +101,7 @@ The major differentiation of this project is the **Verify-Then-Trust** loop:
 4. **Audit (Verification):** The rewritten text is strictly audited by the deterministic engine. If CLI did not decrease, or SBERT meaning drift is too high, the LLM is penalized and loops again.
 5. **Certify:** Outputs a definitive certification badge with quantifiable improvements (e.g., "-0.2 CLI, +2 Freed Working Memory Slots").
 
-## 🛠️ Model Training (Optional)
+## Model Training (Optional)
 If you wish to retrain the underlying XGBoost/Random Forest models on your own dataset representing human ease-of-readability, update `archive/CLEAR.csv` and run:
 
 ```bash
@@ -110,5 +110,5 @@ python3 train_ml.py
 
 This populates the `models/saved_models/` directory with `best_cli_model.joblib`, updated feature parameters, and percentile mapping JSONs.
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
