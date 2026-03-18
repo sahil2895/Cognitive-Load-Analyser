@@ -1,0 +1,39 @@
+{
+  "model_name": "Random Forest",
+  "trained_on": "2026-03-17T23:20:19.080326",
+  "dataset": "CLEAR Corpus",
+  "training_samples": 800,
+  "test_samples": 200,
+  "total_samples_used": 1000,
+  "metrics": {
+    "mse": 0.492,
+    "rmse": 0.7014,
+    "mae": 0.5496,
+    "r2": 0.3437,
+    "ev": 0.3672
+  },
+  "rule_based_r2": -0.1236,
+  "improvement_over_rules": 0.4673,
+  "normalization": {
+    "min": -0.8131,
+    "max": 3.034
+  },
+  "feature_columns": [
+    "intrinsic_avg_zipf",
+    "intrinsic_rare_ratio",
+    "intrinsic_term_ratio",
+    "intrinsic_num_terms",
+    "intrinsic_score",
+    "extraneous_avg_branching",
+    "extraneous_avg_sentence_length",
+    "extraneous_avg_dependency_depth",
+    "extraneous_passive_count",
+    "extraneous_nominalization_ratio",
+    "extraneous_score",
+    "germane_example_count",
+    "germane_summary_count",
+    "germane_question_count",
+    "germane_scaffold_count",
+    "germane_score"
+  ]
+}

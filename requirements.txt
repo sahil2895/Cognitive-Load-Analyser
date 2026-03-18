@@ -1,0 +1,17 @@
+streamlit
+pandas
+plotly
+fastapi
+uvicorn
+google-generativeai
+spacy
+wordfreq
+textstat
+pydantic
+scikit-learn
+xgboost
+joblib
+sentence-transformers
+fpdf2
+
+pydantic-settings
